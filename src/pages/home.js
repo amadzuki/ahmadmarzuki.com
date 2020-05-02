@@ -12,7 +12,7 @@ const Section = styled.box`
 
 const Home = () => {
   return (
-    <Layout>
+    <Layout headingText="Hello, I'm Marzuki" buttonText="See My Portfolio">
       <Section></Section>
     </Layout>
   )

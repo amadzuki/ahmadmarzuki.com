@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import styled from "@xstyled/styled-components"
 
 import Navigation from "../components/Navigation"
@@ -29,19 +30,30 @@ const HeroButton = styled.button`
   color: black;
 `
 
-const Layout = ({ children }) => {
+const Layout = ({ children, headingText, buttonText }) => {
   return (
     <div>
       <Hero>
         <Navigation></Navigation>
         <HeroHeader>
-          <HeroHeading>Hello, I'm Marzuki</HeroHeading>
-          <HeroButton>See My Portfolio</HeroButton>
+          <HeroHeading>{headingText}</HeroHeading>
+          <HeroButton>{buttonText}</HeroButton>
         </HeroHeader>
       </Hero>
       {children}
     </div>
   )
+}
+
+Layout.propTypes = {
+  children: PropTypes.element.isRequired,
+  headingText: PropTypes.string.isRequired,
+  buttonText: PropTypes.string.isRequired,
+}
+
+Layout.defaultProps = {
+  headingText: "Title",
+  buttonText: "Button",
 }
 
 export default Layout
