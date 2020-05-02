@@ -4,33 +4,32 @@ import { Link } from "react-router-dom"
 
 const NavigationWrapper = styled.div`
   display: flex;
+  position: fixed;
 `
-const LinkButton = styled.box`
-  padding: 1.5em;
-  margin: 1.5em;
+const LinkBox = styled.box`
+  padding: 1em;
+  margin: 2em;
+  color: whitesmoke;
+  &:hover {
+    background-color: secondary;
+  }
 `
 
 const Navigation = () => {
   return (
     <NavigationWrapper>
       <Link to="/" style={{ textDecoration: "none" }}>
-        <LinkButton>HOME</LinkButton>
+        <LinkBox>HOME</LinkBox>
       </Link>
-      <LinkButton>
-        <Link to="/about" style={{ textDecoration: "none" }}>
-          ABOUT
-        </Link>
-      </LinkButton>
-      <LinkButton>
-        <Link to="/contact" style={{ textDecoration: "none" }}>
-          CONTACT
-        </Link>
-      </LinkButton>
-      <LinkButton>
-        <Link to="/blog" style={{ textDecoration: "none" }}>
-          BLOG
-        </Link>
-      </LinkButton>
+      <Link to="/about" style={{ textDecoration: "none" }}>
+        <LinkBox>ABOUT</LinkBox>
+      </Link>
+      <Link to="/contact" style={{ textDecoration: "none" }}>
+        <LinkBox>CONTACT</LinkBox>
+      </Link>
+      <Link to="/blog" style={{ textDecoration: "none" }}>
+        <LinkBox>BLOG</LinkBox>
+      </Link>
     </NavigationWrapper>
   )
 }
