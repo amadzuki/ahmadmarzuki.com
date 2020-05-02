@@ -8,9 +8,10 @@ import { ThemeProvider } from "@xstyled/styled-components"
 
 const theme = {
   colors: {
-    primary: "#fff",
-    secondary: "#aaa",
-    tertiary: "#888",
+    primaryFont: "#fff",
+    secondaryFont: "#bbb",
+    primaryBackground: "orange",
+    secondaryBackground: "#222",
   },
 }
 

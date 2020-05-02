@@ -5,7 +5,6 @@ import Navigation from "../components/Navigation"
 import MainHeading from "../components/MainHeading"
 
 const Hero = styled.box`
-  margin: 0;
   height: 100vh;
   background: no-repeat center/cover url("/images/HeroImage.jpg");
 `
@@ -14,10 +13,16 @@ const MainButton = styled.box`
   font-size: 1.2rem;
   margin: 1em;
   padding: 0.5em 1em;
-  background-color: orange;
+  background-color: primaryBackground;
   border-radius: 0.5em;
   color: black;
 `
+const Section = styled.box`
+  height: 100vh;
+  background-color: secondaryBackground;
+`
+// const SectionHeader = styled.box`
+// `
 
 const Home = () => {
   return (
@@ -28,6 +33,7 @@ const Home = () => {
           <MainButton>See My Portfolio</MainButton>
         </MainHeading>
       </Hero>
+      <Section></Section>
     </div>
   )
 }
