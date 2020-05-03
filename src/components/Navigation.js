@@ -7,17 +7,22 @@ const NavigationWrapper = styled.div`
   position: fixed;
 `
 const LinkBox = styled.box`
-  padding: 1em;
+  padding: 0.5em;
   margin: 2em;
   color: whitesmoke;
   &:hover {
-    background-color: secondary;
+    color: orange;
   }
+`
+
+const IconBox = styled.img`
+  max-width: 3em;
 `
 
 const Navigation = () => {
   return (
     <NavigationWrapper>
+      <IconBox src="/images/icon-amadzuki-new.svg"></IconBox>
       <Link to="/" style={{ textDecoration: "none" }}>
         <LinkBox>HOME</LinkBox>
       </Link>

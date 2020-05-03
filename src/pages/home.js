@@ -3,11 +3,11 @@ import styled from "@xstyled/styled-components"
 
 import Layout from "../components/Layout"
 
-const Section = styled.box`
+const Section = styled.main`
   height: 100vh;
   background-color: secondaryBackground;
 `
-// const SectionHeader = styled.box`
+// const SectionHeader = styled.main`
 // `
 
 const Home = () => {
