@@ -10,7 +10,7 @@ const Hero = styled.box`
 `
 const HeroHeader = styled.header`
   height: 100%;
-  color: white;
+  color: primaryFont;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,7 +24,7 @@ const HeroButton = styled.button`
   font-size: 1.2rem;
   margin: 1em;
   padding: 0.5em 1em;
-  background-color: primaryBackground;
+  background-color: primaryOrange;
   border: none;
   border-radius: 0.5em;
   color: black;
