@@ -14,6 +14,8 @@ const theme = {
     secondaryOrange: "#d15e00",
     darkOrange: "#4d2200",
     primaryBackground: "#222222",
+    secondaryBackground: "#333333",
+    tertiaryBackground: "#4F4F4F",
   },
 }
 

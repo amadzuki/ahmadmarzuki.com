@@ -2,9 +2,9 @@ import React from "react"
 import styled from "@xstyled/styled-components"
 
 import Layout from "../components/Layout"
+import CardPortfolio from "../components/CardPortfolio"
 
 const Section = styled.box`
-  height: 100vh;
   color: primaryFont;
   background-color: primaryBackground;
   display: flex;
@@ -22,9 +22,13 @@ const SectionHeader = styled.box`
   display: flex;
   flex-direction: column;
 `
+const AccentLine = styled.box`
+  height: 4;
+  background-color: secondaryOrange;
+`
 const SectionHeading = styled.box`
   font-size: 2.5em;
-  color: secondaryOrange;
+  color: primaryFont;
   line-height: 1.5em;
 `
 const SectionDescription = styled.box`
@@ -58,10 +62,11 @@ const CardImage = styled.img`
 const Home = () => {
   return (
     <Layout headingText="Hello, I'm Marzuki" buttonText="See My Portfolio">
-      <Section>
+      <Section height={"100vh"}>
         <SectionContent>
           <SectionHeader maxWidth={450} mr={50}>
-            <SectionHeading borderTop={4}>
+            <AccentLine width={300}></AccentLine>
+            <SectionHeading color={"secondaryOrange"}>
               I'm a Material Engineer turned Web Developer
             </SectionHeading>
             <SectionDescription>
@@ -92,9 +97,7 @@ const Home = () => {
         backgroundImage={`url("/images/technical_skill_background.jpg")`}
         flexDirection={"column"}
       >
-        <SectionHeading color={"primaryFont"} mb={40}>
-          Technical Skills
-        </SectionHeading>
+        <SectionHeading mb={"1.5em"}>Technical Skills</SectionHeading>
         <SectionContent>
           <CardImage src="/images/html.svg" alt="" />
           <CardImage src="/images/css.svg" alt="" />
@@ -103,6 +106,18 @@ const Home = () => {
           <CardImage src="/images/redux.svg" alt="" />
           <CardImage src="/images/figma.svg" alt="" />
         </SectionContent>
+      </Section>
+      <Section flexDirection={"column"}>
+        <SectionHeading fontSize={"3.5em"} m={"1em"}>
+          Portfolio of Apps
+        </SectionHeading>
+        <CardPortfolio
+          imagePath="/images/screenshot-todo.png"
+          title="Todos"
+          linkURL="https://todos.ahmadmarzuki.com"
+          linkText="todos.ahmadmarzuki.com"
+          description="A simple to-do list web app to plan your day. Inspired by Microsoft Todo with different style. Built on basic HTML, CSS, and Vanilla Javascript."
+        ></CardPortfolio>
       </Section>
     </Layout>
   )
