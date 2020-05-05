@@ -28,7 +28,7 @@ const appList = [
     linkURL: "https://codeperminute.ahmadmarzuki.com",
     linkText: "codeperminute.ahmadmarzuki.com",
     description:
-      "Typing game for programmers. Recommended for beginners who just started learning to code or any programmer who wants to hone their touch typing skill for programming. Inspired by typershark but using HTML, CSS and JavaScript as the enemies.",
+      "Typing game for programmers. Recommended for beginners who just started learning to code or any programmer who want to hone their touch typing skill for programming. Inspired by typershark but using HTML, CSS and JavaScript as the enemies.",
   },
 ]
 
