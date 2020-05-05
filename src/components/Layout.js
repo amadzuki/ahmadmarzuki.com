@@ -6,7 +6,7 @@ import Navigation from "../components/Navigation"
 
 const Hero = styled.box`
   height: 100vh;
-  background: no-repeat center/cover url("/images/HeroImage.jpg");
+  background: no-repeat center/cover;
 `
 const HeroHeader = styled.header`
   height: 100%;
@@ -30,10 +30,16 @@ const HeroButton = styled.a`
   text-decoration: none;
 `
 
-const Layout = ({ children, headingText, buttonText, buttonLink }) => {
+const Layout = ({
+  children,
+  headingText,
+  buttonText,
+  buttonLink,
+  backgroundURL,
+}) => {
   return (
     <div>
-      <Hero>
+      <Hero backgroundImage={backgroundURL}>
         <Navigation></Navigation>
         <HeroHeader>
           <HeroHeading>{headingText}</HeroHeading>

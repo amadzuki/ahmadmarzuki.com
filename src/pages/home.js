@@ -74,6 +74,7 @@ const Home = () => {
       headingText="Hello, I'm Marzuki"
       buttonText="See My Portfolio"
       buttonLink="#portfolio"
+      backgroundURL='url("/images/HeroImageHome.jpg")'
     >
       <Section height={"100vh"}>
         <SectionContent>
