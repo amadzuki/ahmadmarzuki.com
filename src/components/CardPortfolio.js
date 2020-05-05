@@ -36,7 +36,9 @@ const PortfolioLink = styled.a`
   font-family: monospace;
   color: secondaryOrange;
 `
-const PortfolioDescription = styled.p``
+const PortfolioDescription = styled.p`
+  padding-right: 1em;
+`
 
 const CardPortfolio = ({
   imagePath,

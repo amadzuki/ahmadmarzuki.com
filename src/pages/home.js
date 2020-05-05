@@ -60,6 +60,13 @@ const CompanyPosition = styled.div`
 const CardImage = styled.img`
   margin: 1em 2em;
 `
+const SeparatorLine = styled.div`
+  width: 70vw;
+  height: 6;
+  border-radius: 4;
+  background-color: secondaryOrange;
+  margin-bottom: 3em;
+`
 
 const Home = () => {
   return (
@@ -72,10 +79,12 @@ const Home = () => {
               I'm a Material Engineer turned Web Developer
             </SectionHeading>
             <SectionDescription>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque
-              quae atque, provident iste voluptatum repellat id quod veniam,
-              quam sunt eveniet officiis! Voluptatem debitis dicta quaerat
-              eligendi minima vitae rem!
+              I was graduated as Bachelor of Engineering. Had a taste of working
+              as Intern Engineer in PT Timah and CSR at Elcorps and other side
+              jobs. But still, it didn't click for me. And now I've found my
+              passion in coding. Feel free to wander around this personal
+              website. I've built it myself with React framework. I learned this
+              all in 2 months from a great programmer.
             </SectionDescription>
           </SectionHeader>
           <SectionAside maxWidth={450}>
@@ -124,6 +133,10 @@ const Home = () => {
             ></CardPortfolio>
           )
         })}
+      </Section>
+      <Section height={110} flexDirection={"column"}>
+        <SeparatorLine></SeparatorLine>
+        <div>Copyright © 2020 Ahmad Marzuki</div>
       </Section>
     </Layout>
   )
