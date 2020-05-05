@@ -70,7 +70,11 @@ const SeparatorLine = styled.div`
 
 const Home = () => {
   return (
-    <Layout headingText="Hello, I'm Marzuki" buttonText="See My Portfolio">
+    <Layout
+      headingText="Hello, I'm Marzuki"
+      buttonText="See My Portfolio"
+      buttonLink="#portfolio"
+    >
       <Section height={"100vh"}>
         <SectionContent>
           <SectionHeader maxWidth={450} mr={50}>
@@ -118,7 +122,7 @@ const Home = () => {
           <CardImage src="/images/figma.svg" alt="" />
         </SectionContent>
       </Section>
-      <Section flexDirection={"column"}>
+      <Section flexDirection={"column"} id="portfolio">
         <SectionHeading fontSize={"3.5em"} m={"1em"}>
           Portfolio of Apps
         </SectionHeading>

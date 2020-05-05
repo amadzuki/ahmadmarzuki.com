@@ -20,24 +20,24 @@ const HeroHeading = styled.h1`
   font-size: 3em;
 `
 
-const HeroButton = styled.button`
+const HeroButton = styled.a`
   font-size: 1.2rem;
   margin: 1em;
   padding: 0.5em 1em;
   background-color: primaryOrange;
-  border: none;
   border-radius: 0.5em;
   color: black;
+  text-decoration: none;
 `
 
-const Layout = ({ children, headingText, buttonText }) => {
+const Layout = ({ children, headingText, buttonText, buttonLink }) => {
   return (
     <div>
       <Hero>
         <Navigation></Navigation>
         <HeroHeader>
           <HeroHeading>{headingText}</HeroHeading>
-          <HeroButton>{buttonText}</HeroButton>
+          <HeroButton href={buttonLink}>{buttonText}</HeroButton>
         </HeroHeader>
       </Hero>
       {children}
