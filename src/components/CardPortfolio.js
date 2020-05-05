@@ -9,6 +9,7 @@ const CardPortfolioStyled = styled.div`
   display: flex;
   align-items: center;
   padding-left: 1em;
+  margin: 1.5rem;
 `
 const PortfolioImageFrame = styled.div`
   height: 278;

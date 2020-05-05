@@ -4,6 +4,8 @@ import styled from "@xstyled/styled-components"
 import Layout from "../components/Layout"
 import CardPortfolio from "../components/CardPortfolio"
 
+import appList from "../utils/appList"
+
 const Section = styled.box`
   color: primaryFont;
   background-color: primaryBackground;
@@ -56,7 +58,7 @@ const CompanyPosition = styled.div`
 `
 
 const CardImage = styled.img`
-  margin: 0 2em;
+  margin: 1em 2em;
 `
 
 const Home = () => {
@@ -93,7 +95,7 @@ const Home = () => {
         </SectionContent>
       </Section>
       <Section
-        height={366}
+        padding={"2em"}
         backgroundImage={`url("/images/technical_skill_background.jpg")`}
         flexDirection={"column"}
       >
@@ -111,13 +113,17 @@ const Home = () => {
         <SectionHeading fontSize={"3.5em"} m={"1em"}>
           Portfolio of Apps
         </SectionHeading>
-        <CardPortfolio
-          imagePath="/images/screenshot-todo.png"
-          title="Todos"
-          linkURL="https://todos.ahmadmarzuki.com"
-          linkText="todos.ahmadmarzuki.com"
-          description="A simple to-do list web app to plan your day. Inspired by Microsoft Todo with different style. Built on basic HTML, CSS, and Vanilla Javascript."
-        ></CardPortfolio>
+        {appList.map((app) => {
+          return (
+            <CardPortfolio
+              imagePath={app.imagePath}
+              title={app.title}
+              linkURL={app.linkURL}
+              linkText={app.linkText}
+              description={app.description}
+            ></CardPortfolio>
+          )
+        })}
       </Section>
     </Layout>
   )
