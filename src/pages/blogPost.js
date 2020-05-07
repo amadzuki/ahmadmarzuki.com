@@ -4,7 +4,7 @@ import styled from "@xstyled/styled-components"
 
 import Layout from "../components/Layout"
 
-import posts from "../data/posts"
+import posts from "../data/posts.json"
 
 const Section = styled.box`
   color: primaryFont;

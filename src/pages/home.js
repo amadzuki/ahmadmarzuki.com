@@ -4,7 +4,7 @@ import styled from "@xstyled/styled-components"
 import Layout from "../components/Layout"
 import CardPortfolio from "../components/CardPortfolio"
 
-import appList from "../data/appList"
+import appList from "../data/appList.json"
 
 const Section = styled.box`
   color: primaryFont;
