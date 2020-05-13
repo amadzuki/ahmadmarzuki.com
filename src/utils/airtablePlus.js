@@ -1,8 +1,8 @@
 import AirtablePlus from "airtable-plus"
 
 const airtableContactedMe = new AirtablePlus({
-  baseID: "appgfGWHYND3Bu2bu",
-  apiKey: "key6R3McbRSNQ6Pik",
+  baseID: process.env.REACT_APP_AIRTABLE_BASEID,
+  apiKey: process.env.REACT_APP_AIRTABLE_APIKEY,
   tableName: "Messages",
   camelCase: false,
   complex: false,
