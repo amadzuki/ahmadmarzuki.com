@@ -115,21 +115,22 @@ const Home = () => {
       >
         <SectionHeading mb={"1.5em"}>Technical Skills</SectionHeading>
         <SectionContent>
-          <CardImage src="/images/html.svg" alt="" />
-          <CardImage src="/images/css.svg" alt="" />
-          <CardImage src="/images/javascript.svg" alt="" />
-          <CardImage src="/images/react.svg" alt="" />
-          <CardImage src="/images/redux.svg" alt="" />
-          <CardImage src="/images/figma.svg" alt="" />
+          <CardImage src="/images/html.svg" alt="HTML" />
+          <CardImage src="/images/css.svg" alt="CSS" />
+          <CardImage src="/images/javascript.svg" alt="JavaScript" />
+          <CardImage src="/images/react.svg" alt="React" />
+          <CardImage src="/images/redux.svg" alt="Redux" />
+          <CardImage src="/images/figma.svg" alt="Figma" />
         </SectionContent>
       </Section>
       <Section flexDirection={"column"} id="portfolio">
         <SectionHeading fontSize={"3.5em"} m={"1em"}>
           Portfolio of Apps
         </SectionHeading>
-        {appList.map((app) => {
+        {appList.map((app, index) => {
           return (
             <CardPortfolio
+              key={index}
               imagePath={app.imagePath}
               title={app.title}
               linkURL={app.linkURL}
@@ -148,3 +149,4 @@ const Home = () => {
 }
 
 export default Home
+export { Section }
