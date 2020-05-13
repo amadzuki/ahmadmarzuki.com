@@ -24,11 +24,7 @@ const BlogPost = () => {
 
   const { title, content } = posts.find((post) => post.slug === postTitle)
   return (
-    <Layout
-      headingText={title}
-      buttonText="Read"
-      backgroundURL='url("/images/BlogImage.png")'
-    >
+    <Layout headingText={title} backgroundURL='url("/images/BlogImage.png")'>
       <Section>
         <BlogContent>{content}</BlogContent>
       </Section>

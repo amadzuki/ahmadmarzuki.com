@@ -43,7 +43,9 @@ const Layout = ({
         <Navigation></Navigation>
         <HeroHeader>
           <HeroHeading>{headingText}</HeroHeading>
-          <HeroButton href={buttonLink}>{buttonText}</HeroButton>
+          {buttonText && (
+            <HeroButton href={buttonLink}>{buttonText}</HeroButton>
+          )}
         </HeroHeader>
       </Hero>
       {children}
@@ -54,12 +56,10 @@ const Layout = ({
 Layout.propTypes = {
   children: PropTypes.element.isRequired,
   headingText: PropTypes.string.isRequired,
-  buttonText: PropTypes.string.isRequired,
 }
 
 Layout.defaultProps = {
   headingText: "Title",
-  buttonText: "Button",
 }
 
 export default Layout
