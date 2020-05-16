@@ -16,15 +16,16 @@ const Section = styled.box`
 `
 const SectionContent = styled.box`
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: start;
   flex-basis: 70%;
 `
 const SectionHeader = styled.box`
-  flex: 0 1 auto;
   display: flex;
   flex-direction: column;
+  margin-top: 3em;
+  margin-bottom: 2em;
 `
 const AccentLine = styled.box`
   height: 4;
@@ -37,26 +38,27 @@ const SectionHeading = styled.box`
 `
 const SectionDescription = styled.box`
   font-size: 1.2em;
-  margin: 1.5em 0;
+  margin: 1em 0 1em 2em;
 `
 
 const SectionExperience = styled.box`
-  flex: 0 1 auto;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 `
 
 const CompanyList = styled.div`
   display: flex;
   justify-content: start;
+  flex-direction: column;
+  padding: 0 2em;
+  margin-right: 1em;
 `
 const CompanyLogo = styled.img`
   width: 90;
   height: 90;
 `
-const CompanyPosition = styled.div`
-  margin: 1em;
-  font-size: 1.7em;
-`
+const CompanyPosition = styled.div``
 
 const CardImage = styled.img`
   margin: 1em 2em;
@@ -78,7 +80,7 @@ const Home = () => {
       backgroundURL='url("/images/HeroImageHome.jpg")'
     >
       <Section>
-        <SectionContent>
+        <SectionContent flexDirection={"column"}>
           <SectionHeader>
             <AccentLine width={300}></AccentLine>
             <SectionHeading color={"secondaryOrange"}>
@@ -93,23 +95,28 @@ const Home = () => {
               all in 2 months from a great programmer.
             </SectionDescription>
           </SectionHeader>
-          <SectionHeading alignSelf={"center"}>My experience</SectionHeading>
+          <SectionHeader>
+            <AccentLine width={200}></AccentLine>
+            <SectionHeading color={"secondaryOrange"}>
+              My background and experiences
+            </SectionHeading>
+          </SectionHeader>
           <SectionExperience>
             <CompanyList>
               <CompanyLogo src="/images/itb.png"></CompanyLogo>
-              <CompanyPosition>Graduated from ITB</CompanyPosition>
+              <CompanyPosition>ITB Alumnus</CompanyPosition>
             </CompanyList>
             <CompanyList>
               <CompanyLogo src="/images/elzatta.png"></CompanyLogo>
-              <CompanyPosition>CSR at Elcorps</CompanyPosition>
+              <CompanyPosition>CSR Elcorps</CompanyPosition>
             </CompanyList>
             <CompanyList>
               <CompanyLogo src="/images/timah.png"></CompanyLogo>
-              <CompanyPosition>Engineer at PT Timah</CompanyPosition>
+              <CompanyPosition>Engineer PT Timah</CompanyPosition>
             </CompanyList>
             <CompanyList>
               <CompanyLogo src="/images/icon-amadzuki-new.svg"></CompanyLogo>
-              <CompanyPosition>Freelance Fullstack Programmer</CompanyPosition>
+              <CompanyPosition>Freelance Web Developer</CompanyPosition>
             </CompanyList>
           </SectionExperience>
         </SectionContent>
@@ -119,7 +126,7 @@ const Home = () => {
         flexDirection={"column"}
       >
         <SectionHeading mb={"1.5em"}>Technical Skills</SectionHeading>
-        <SectionContent flexDirection={"row"}>
+        <SectionContent>
           <CardImage src="/images/html.svg" alt="HTML" />
           <CardImage src="/images/css.svg" alt="CSS" />
           <CardImage src="/images/javascript.svg" alt="JavaScript" />
@@ -132,7 +139,7 @@ const Home = () => {
         <SectionHeading fontSize={"3.5em"} m={"1em"}>
           Portfolio of Apps
         </SectionHeading>
-        <SectionContent flexDirection={"row"} flexWrap={"wrap"}>
+        <SectionContent>
           {appList.map((app, index) => {
             return (
               <CardPortfolio
