@@ -137,6 +137,7 @@ const Home = () => {
           <CardImage src="/images/react.svg" alt="React" />
           <CardImage src="/images/redux.svg" alt="Redux" />
           <CardImage src="/images/figma.svg" alt="Figma" />
+          <CardImage src="/images/heroku.svg" alt="Heroku" />
         </SectionContent>
       </Section>
       <Section flexDirection={"column"} id="portfolio">
