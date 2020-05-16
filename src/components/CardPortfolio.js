@@ -56,7 +56,9 @@ const CardPortfolio = ({
       </PortfolioImageFrame>
       <PortfolioTextsDiv>
         <PortfolioTitle>{title}</PortfolioTitle>
-        <PortfolioLink href={linkURL}>{linkText}</PortfolioLink>
+        <PortfolioLink href={linkURL} target={"_blank"}>
+          {linkText}
+        </PortfolioLink>
         <PortfolioDescription>{description}</PortfolioDescription>
       </PortfolioTextsDiv>
     </CardPortfolioStyled>
