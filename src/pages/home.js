@@ -12,12 +12,14 @@ const Section = styled.box`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 3rem;
 `
 const SectionContent = styled.box`
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: start;
+  flex-basis: 70%;
 `
 const SectionHeader = styled.box`
   flex: 0 1 auto;
@@ -38,10 +40,9 @@ const SectionDescription = styled.box`
   margin: 1.5em 0;
 `
 
-const SectionAside = styled.box`
+const SectionExperience = styled.box`
   flex: 0 1 auto;
   display: flex;
-  flex-direction: column;
 `
 
 const CompanyList = styled.div`
@@ -76,9 +77,9 @@ const Home = () => {
       buttonLink="#portfolio"
       backgroundURL='url("/images/HeroImageHome.jpg")'
     >
-      <Section height={"100vh"}>
+      <Section>
         <SectionContent>
-          <SectionHeader maxWidth={450} mr={50}>
+          <SectionHeader>
             <AccentLine width={300}></AccentLine>
             <SectionHeading color={"secondaryOrange"}>
               I'm a Material Engineer turned Web Developer
@@ -92,7 +93,8 @@ const Home = () => {
               all in 2 months from a great programmer.
             </SectionDescription>
           </SectionHeader>
-          <SectionAside maxWidth={450}>
+          <SectionHeading alignSelf={"center"}>My experience</SectionHeading>
+          <SectionExperience>
             <CompanyList>
               <CompanyLogo src="/images/itb.png"></CompanyLogo>
               <CompanyPosition>Graduated from ITB</CompanyPosition>
@@ -105,16 +107,19 @@ const Home = () => {
               <CompanyLogo src="/images/timah.png"></CompanyLogo>
               <CompanyPosition>Engineer at PT Timah</CompanyPosition>
             </CompanyList>
-          </SectionAside>
+            <CompanyList>
+              <CompanyLogo src="/images/icon-amadzuki-new.svg"></CompanyLogo>
+              <CompanyPosition>Freelance Fullstack Programmer</CompanyPosition>
+            </CompanyList>
+          </SectionExperience>
         </SectionContent>
       </Section>
       <Section
-        padding={"2em"}
         backgroundImage={`url("/images/technical_skill_background.jpg")`}
         flexDirection={"column"}
       >
         <SectionHeading mb={"1.5em"}>Technical Skills</SectionHeading>
-        <SectionContent>
+        <SectionContent flexDirection={"row"}>
           <CardImage src="/images/html.svg" alt="HTML" />
           <CardImage src="/images/css.svg" alt="CSS" />
           <CardImage src="/images/javascript.svg" alt="JavaScript" />
@@ -127,18 +132,20 @@ const Home = () => {
         <SectionHeading fontSize={"3.5em"} m={"1em"}>
           Portfolio of Apps
         </SectionHeading>
-        {appList.map((app, index) => {
-          return (
-            <CardPortfolio
-              key={index}
-              imagePath={app.imagePath}
-              title={app.title}
-              linkURL={app.linkURL}
-              linkText={app.linkText}
-              description={app.description}
-            ></CardPortfolio>
-          )
-        })}
+        <SectionContent flexDirection={"row"} flexWrap={"wrap"}>
+          {appList.map((app, index) => {
+            return (
+              <CardPortfolio
+                key={index}
+                imagePath={app.imagePath}
+                title={app.title}
+                linkURL={app.linkURL}
+                linkText={app.linkText}
+                description={app.description}
+              ></CardPortfolio>
+            )
+          })}
+        </SectionContent>
       </Section>
       <Section height={110} flexDirection={"column"}>
         <SeparatorLine></SeparatorLine>
