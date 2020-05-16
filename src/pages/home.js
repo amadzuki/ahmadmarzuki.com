@@ -52,7 +52,7 @@ const CompanyList = styled.div`
   justify-content: start;
   flex-direction: column;
   padding: 0 2em;
-  margin-right: 1em;
+  margin: 0 1em 2em 0;
 `
 const CompanyLogo = styled.img`
   width: 90;
@@ -113,6 +113,10 @@ const Home = () => {
             <CompanyList>
               <CompanyLogo src="/images/timah.png"></CompanyLogo>
               <CompanyPosition>Engineer PT Timah</CompanyPosition>
+            </CompanyList>
+            <CompanyList>
+              <CompanyLogo src="/images/azobu.png"></CompanyLogo>
+              <CompanyPosition>Azobu Student</CompanyPosition>
             </CompanyList>
             <CompanyList>
               <CompanyLogo src="/images/icon-amadzuki-new.svg"></CompanyLogo>
