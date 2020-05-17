@@ -11,6 +11,20 @@ const MessageForm = styled.form`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  textarea {
+    margin: 1em 0;
+    border-radius: 5;
+  }
+  button {
+    border-radius: 5;
+  }
+`
+
+const FormInput = styled.input`
+  width: 400;
+  margin: 1em 0;
+  padding: 1em;
+  border-radius: 5;
 `
 
 const Contact = () => {
@@ -36,8 +50,8 @@ const Contact = () => {
       <Section id="form">
         <MessageForm onSubmit={handleSubmit(sendMessage)}>
           <h1>Message me!</h1>
-          <input name="name" placeholder="Your name here" ref={register} />
-          <input
+          <FormInput name="name" placeholder="Your name here" ref={register} />
+          <FormInput
             name="email"
             type="email"
             placeholder="Your email here"
