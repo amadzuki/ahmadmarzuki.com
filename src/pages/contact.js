@@ -14,6 +14,7 @@ const MessageForm = styled.form`
   textarea {
     margin: 1em 0;
     border-radius: 5;
+    padding: 1em;
   }
   button {
     border-radius: 5;

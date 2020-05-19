@@ -1,19 +1,25 @@
 import React from "react"
-import styled from "@xstyled/styled-components"
+import styled, { css, down } from "@xstyled/styled-components"
 
 const CardPortfolioStyled = styled.div`
   background-color: secondaryBackground;
   border-radius: 10;
-  width: 364;
+  max-width: 400;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1em;
   margin: 1.5rem;
+
+  ${down(
+    "sm",
+    css`
+      max-width: 300;
+    `
+  )}
 `
 const PortfolioImageFrame = styled.div`
-  height: 278;
-  flex-basis: 370;
+  height: 250;
   background-color: tertiaryBackground;
   border-radius: 10;
   display: flex;
@@ -21,12 +27,10 @@ const PortfolioImageFrame = styled.div`
   justify-content: center;
 `
 const PortfolioImage = styled.img`
-  max-width: 362;
-  max-height: 191;
+  max-width: 100%;
 `
 const PortfolioTextsDiv = styled.div`
   display: flex;
-  flex-basis: 300;
   flex-direction: column;
 `
 const PortfolioTitle = styled.h1`
@@ -37,6 +41,12 @@ const PortfolioLink = styled.a`
   text-decoration: none;
   font-family: monospace;
   color: secondaryOrange;
+  ${down(
+    "sm",
+    css`
+      font-size: 1.2em;
+    `
+  )}
 `
 const PortfolioDescription = styled.p`
   padding-right: 1em;
