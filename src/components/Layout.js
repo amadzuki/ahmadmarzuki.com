@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import styled from "@xstyled/styled-components"
+import styled, { css, down } from "@xstyled/styled-components"
 
 import Navigation from "../components/Navigation"
 
@@ -18,6 +18,12 @@ const HeroHeader = styled.header`
 `
 const HeroHeading = styled.h1`
   font-size: 3em;
+  ${down(
+    "sm",
+    css`
+      font-size: 2em;
+    `
+  )}
 `
 
 const HeroButton = styled.a`
