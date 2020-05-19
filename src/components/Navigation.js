@@ -6,7 +6,8 @@ const NavigationWrapper = styled.box`
   display: flex;
   position: fixed;
 `
-const LinkBox = styled.box`
+const LinkBox = styled(Link)`
+  text-decoration: none;
   padding: 0.5em;
   margin: 2em 1.5em;
   color: whitesmoke;
@@ -30,18 +31,10 @@ const Navigation = () => {
   return (
     <NavigationWrapper display={display}>
       <IconBox src="/images/icon-amadzuki-new.svg" />
-      <Link to="/" style={{ textDecoration: "none" }}>
-        <LinkBox>HOME</LinkBox>
-      </Link>
-      <Link to="/about" style={{ textDecoration: "none" }}>
-        <LinkBox>ABOUT</LinkBox>
-      </Link>
-      <Link to="/contact" style={{ textDecoration: "none" }}>
-        <LinkBox>CONTACT</LinkBox>
-      </Link>
-      <Link to="/blog" style={{ textDecoration: "none" }}>
-        <LinkBox>BLOG</LinkBox>
-      </Link>
+      <LinkBox to="/">HOME</LinkBox>
+      <LinkBox to="/about">ABOUT</LinkBox>
+      <LinkBox to="/contact">CONTACT</LinkBox>
+      <LinkBox to="/blog">BLOG</LinkBox>
     </NavigationWrapper>
   )
 }
