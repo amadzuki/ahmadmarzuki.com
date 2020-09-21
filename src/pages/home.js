@@ -1,10 +1,11 @@
-import React from "react"
-import styled, { css, down } from "@xstyled/styled-components"
+import React from 'react'
+import styled, { css, down } from '@xstyled/styled-components'
 
-import Layout from "../components/Layout"
-import CardPortfolio from "../components/CardPortfolio"
+import Layout from '../components/Layout'
+import CardPortfolio from '../components/CardPortfolio'
 
-import appList from "../data/appList.json"
+import appList from '../data/appList.json'
+import stacks from '../data/stacks.json'
 
 const Section = styled.box`
   color: primaryFont;
@@ -21,7 +22,7 @@ const SectionContent = styled.box`
   align-items: start;
   flex-basis: 70%;
   ${down(
-    "sm",
+    'sm',
     css`
       flex-basis: 100%;
     `
@@ -45,7 +46,7 @@ const SectionHeading = styled.h1Box`
 const SectionTitle = styled(SectionHeading)`
   color: secondaryOrange;
   ${down(
-    "sm",
+    'sm',
     css`
       font-size: 1.7em;
     `
@@ -57,7 +58,7 @@ const SectionDescription = styled.box`
   margin: 1em 0 1em 2em;
 
   ${down(
-    "sm",
+    'sm',
     css`
       font-size: 1em;
     `
@@ -98,13 +99,13 @@ const Home = () => {
   return (
     <Layout
       headingText="Hello, I'm Marzuki"
-      buttonText="See My Portfolio"
-      buttonLink="#portfolio"
+      buttonText='See My Portfolio'
+      buttonLink='#portfolio'
       backgroundURL='url("/images/HeroImageHome.jpg")'
     >
       <>
         <Section>
-          <SectionContent flexDirection={"column"}>
+          <SectionContent flexDirection={'column'}>
             <SectionHeader>
               <AccentLine></AccentLine>
               <SectionTitle>
@@ -125,23 +126,23 @@ const Home = () => {
             </SectionHeader>
             <SectionExperience>
               <CompanyList>
-                <CompanyLogo src="/images/itb.png"></CompanyLogo>
+                <CompanyLogo src='/images/itb.png'></CompanyLogo>
                 <CompanyPosition>ITB Alumnus</CompanyPosition>
               </CompanyList>
               <CompanyList>
-                <CompanyLogo src="/images/elzatta.png"></CompanyLogo>
+                <CompanyLogo src='/images/elzatta.png'></CompanyLogo>
                 <CompanyPosition>CSR Elcorps</CompanyPosition>
               </CompanyList>
               <CompanyList>
-                <CompanyLogo src="/images/timah.png"></CompanyLogo>
-                <CompanyPosition>Engineer PT Timah</CompanyPosition>
+                <CompanyLogo src='/images/timah.png'></CompanyLogo>
+                <CompanyPosition>Intern PT Timah</CompanyPosition>
               </CompanyList>
               <CompanyList>
-                <CompanyLogo src="/images/azobu.png"></CompanyLogo>
+                <CompanyLogo src='/images/azobu.png'></CompanyLogo>
                 <CompanyPosition>Azobu Student</CompanyPosition>
               </CompanyList>
               <CompanyList>
-                <CompanyLogo src="/images/icon-amadzuki-new.svg"></CompanyLogo>
+                <CompanyLogo src='/images/icon-amadzuki-new.svg'></CompanyLogo>
                 <CompanyPosition>Freelance Web Developer</CompanyPosition>
               </CompanyList>
             </SectionExperience>
@@ -149,21 +150,17 @@ const Home = () => {
         </Section>
         <Section
           backgroundImage={`url("/images/technical_skill_background.jpg")`}
-          flexDirection={"column"}
+          flexDirection={'column'}
         >
-          <SectionHeading mb={"1.5em"}>Technical Skills</SectionHeading>
+          <SectionHeading mb={'1.5em'}>Technical Skills</SectionHeading>
           <SectionContent>
-            <CardImage src="/images/html.svg" alt="HTML" />
-            <CardImage src="/images/css.svg" alt="CSS" />
-            <CardImage src="/images/javascript.svg" alt="JavaScript" />
-            <CardImage src="/images/react.svg" alt="React" />
-            <CardImage src="/images/redux.svg" alt="Redux" />
-            <CardImage src="/images/figma.svg" alt="Figma" />
-            <CardImage src="/images/heroku.svg" alt="Heroku" />
+            {stacks.map((stack) => (
+              <CardImage src={stack.imageSrc} alt={stack.imageAlt} />
+            ))}
           </SectionContent>
         </Section>
-        <Section flexDirection={"column"} id="portfolio">
-          <SectionHeading mb={"1em"}>Portfolio of Apps</SectionHeading>
+        <Section flexDirection={'column'} id='portfolio'>
+          <SectionHeading mb={'1em'}>Portfolio of Apps</SectionHeading>
           <SectionContent>
             {appList.map((app, index) => {
               return (
@@ -179,7 +176,7 @@ const Home = () => {
             })}
           </SectionContent>
         </Section>
-        <Section height={110} flexDirection={"column"}>
+        <Section height={110} flexDirection={'column'}>
           <SeparatorLine></SeparatorLine>
           <div>Copyright © 2020 Ahmad Marzuki</div>
         </Section>

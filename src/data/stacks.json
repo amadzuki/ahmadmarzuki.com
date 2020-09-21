@@ -1,0 +1,79 @@
+[
+  {
+    "name": "HTML",
+    "imageSrc": "/images/html.svg",
+    "imageAlt": "HTML"
+  },
+  {
+    "name": "CSS",
+    "imageSrc": "/images/css.svg",
+    "imageAlt": "CSS"
+  },
+  {
+    "name": "JavaScript",
+    "imageSrc": "/images/javascript.svg",
+    "imageAlt": "JavaScript"
+  },
+  {
+    "name": "React",
+    "imageSrc": "/images/react.svg",
+    "imageAlt": "React"
+  },
+  {
+    "name": "Redux",
+    "imageSrc": "/images/redux.svg",
+    "imageAlt": "Redux"
+  },
+  {
+    "name": "xstyled",
+    "imageSrc": "/images/xstyled.svg",
+    "imageAlt": "xstyled"
+  },
+  {
+    "name": "Figma",
+    "imageSrc": "/images/figma.svg",
+    "imageAlt": "Figma"
+  },
+  {
+    "name": "Netlify",
+    "imageSrc": "/images/netlify.svg",
+    "imageAlt": "Netlify"
+  },
+  {
+    "name": "Heroku",
+    "imageSrc": "/images/heroku.svg",
+    "imageAlt": "Heroku"
+  },
+
+  {
+    "name": "Express",
+    "imageSrc": "/images/express.svg",
+    "imageAlt": "express js"
+  },
+  {
+    "name": "JWT",
+    "imageSrc": "/images/jwt.svg",
+    "imageAlt": "JWT jsonwebtoken"
+  },
+  {
+    "name": "MongoDB",
+    "imageSrc": "/images/mongodb.svg",
+    "imageAlt": "MongoDB"
+  },
+
+  {
+    "name": "Cloudflare",
+    "imageSrc": "/images/cloudflare.svg",
+    "imageAlt": "Cloudflare"
+  },
+  {
+    "name": "Uniregistry",
+    "imageSrc": "/images/uniregistry.svg",
+    "imageAlt": "Uniregistry"
+  },
+  {
+    "name": "Google Cloud Platform",
+    "imageSrc": "/images/gcp.svg",
+    "imageAlt": "GCP Google Cloud Platform"
+  }
+]
