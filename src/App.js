@@ -1,10 +1,5 @@
 import React from 'react'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect,
-} from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 import Home from './pages/home'
 import About from './pages/about'
@@ -31,9 +26,6 @@ const App = () => {
           </Route>
           <Route path='/blog/:postTitle'>
             <BlogPost />
-          </Route>
-          <Route path='/resume'>
-            <Redirect to='/Resume_Ahmad_Marzuki_v3.pdf'></Redirect>
           </Route>
         </Switch>
       </div>
