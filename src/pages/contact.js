@@ -1,6 +1,6 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
-import styled from '@xstyled/styled-components'
+import styled, { css, down } from '@xstyled/styled-components'
 
 import Layout from '../components/Layout'
 import { Section } from './home'
@@ -26,6 +26,12 @@ const FormInput = styled.input`
   margin: 1em 0;
   padding: 1em;
   border-radius: 5;
+  ${down(
+    'sm',
+    css`
+      width: 250;
+    `
+  )}
 `
 const ErrorPopper = styled.p`
   color: magenta;
