@@ -154,8 +154,12 @@ const Home = () => {
         >
           <SectionHeading mb={'1.5em'}>Technical Skills</SectionHeading>
           <SectionContent>
-            {stacks.map((stack) => (
-              <CardImage src={stack.imageSrc} alt={stack.imageAlt} />
+            {stacks.map((stack, index) => (
+              <CardImage
+                key={index}
+                src={stack.imageSrc}
+                alt={stack.imageAlt}
+              />
             ))}
           </SectionContent>
         </Section>
