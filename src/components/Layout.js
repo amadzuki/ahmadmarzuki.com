@@ -1,8 +1,8 @@
-import React from "react"
-import PropTypes from "prop-types"
-import styled, { css, down } from "@xstyled/styled-components"
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled, { css, down } from '@xstyled/styled-components'
 
-import Navigation from "../components/Navigation"
+import Navigation from '../components/Navigation'
 
 const Hero = styled.box`
   height: 100vh;
@@ -19,7 +19,7 @@ const HeroHeader = styled.header`
 const HeroHeading = styled.h1`
   font-size: 3em;
   ${down(
-    "sm",
+    'sm',
     css`
       font-size: 2em;
     `
@@ -65,7 +65,7 @@ Layout.propTypes = {
 }
 
 Layout.defaultProps = {
-  headingText: "Title",
+  headingText: 'Title',
 }
 
 export default Layout

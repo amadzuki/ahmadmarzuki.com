@@ -1,10 +1,10 @@
-import React from "react"
-import { useRouteMatch, Link } from "react-router-dom"
-import styled from "@xstyled/styled-components"
+import React from 'react'
+import { useRouteMatch, Link } from 'react-router-dom'
+import styled from '@xstyled/styled-components'
 
-import Layout from "../components/Layout"
+import Layout from '../components/Layout'
 
-import posts from "../data/posts.json"
+import posts from '../data/posts.json'
 
 const Section = styled.box`
   color: primaryFont;
@@ -22,18 +22,18 @@ const Blog = () => {
 
   return (
     <Layout
-      headingText="Blog"
-      buttonText="Read My Articles"
-      buttonLink="#posts"
-      backgroundURL='url("/images/BlogImage.png")'
+      headingText='Blog'
+      buttonText='Read My Articles'
+      buttonLink='#posts'
+      backgroundURL='url("/images/BlogImage.jpg")'
     >
-      <Section id="posts">
+      <Section id='posts'>
         {posts.map((post, index) => {
           return (
             <PostLink key={index}>
               <Link
                 to={`${match.url}/${post.slug}`}
-                style={{ textDecoration: "none", color: "white" }}
+                style={{ textDecoration: 'none', color: 'white' }}
               >
                 {post.title}
               </Link>
