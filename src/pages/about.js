@@ -46,8 +46,7 @@ const About = () => {
           Or a tech prophet like <AccentWord>Elon Musk</AccentWord>.
         </Line>
         <Line>
-          You might call it <AccentWord>Naivety</AccentWord>, but I'd say it is{' '}
-          <AccentWord>Novelty</AccentWord>.
+          Having tried various things, it turns out they didn't click for me
         </Line>
         <Line>
           One day, I've come to love this rapid changing industry of{' '}
