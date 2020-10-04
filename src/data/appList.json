@@ -1,5 +1,12 @@
 [
   {
+    "title": "SAIKOU",
+    "imagePath": "/images/screenshot-saikou.png",
+    "linkURL": "https://saikou.ahmadmarzuki.com",
+    "linkText": "saikou.ahmadmarzuki.com",
+    "description": "A social media for pop culture fans and communities especially for anime and manga. It will be the place for fans to share their interests each other. "
+  },
+  {
     "title": "Todos",
     "imagePath": "/images/screenshot-todos.png",
     "linkURL": "https://todos.ahmadmarzuki.com",
@@ -19,12 +26,5 @@
     "linkURL": "https://amadzuki-janken.netlify.app/",
     "linkText": "jankenbattle.ahmadmarzuki.com",
     "description": "Rock-Paper-Scissor game on web. Single player versus computer. Built on React framework."
-  },
-  {
-    "title": "SAIKOU",
-    "imagePath": "/images/screenshot-saikou.png",
-    "linkURL": "https://saikou.ahmadmarzuki.com",
-    "linkText": "saikou.ahmadmarzuki.com",
-    "description": "A social media for pop culture fans and communities especially for anime and manga. It will be the place for fans to share their interests each other. "
   }
 ]

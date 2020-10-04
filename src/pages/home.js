@@ -73,7 +73,8 @@ const SectionExperience = styled.box`
 
 const CompanyList = styled.div`
   display: flex;
-  justify-content: start;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   padding: 0 2em;
   margin: 0 1em 2em 0;
@@ -136,10 +137,6 @@ const Home = () => {
               <CompanyList>
                 <CompanyLogo src='/images/timah.png'></CompanyLogo>
                 <CompanyPosition>Intern PT Timah</CompanyPosition>
-              </CompanyList>
-              <CompanyList>
-                <CompanyLogo src='/images/azobu.png'></CompanyLogo>
-                <CompanyPosition>Azobu Student</CompanyPosition>
               </CompanyList>
               <CompanyList>
                 <CompanyLogo src='/images/icon-amadzuki-new.svg'></CompanyLogo>
