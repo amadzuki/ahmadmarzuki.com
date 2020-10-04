@@ -55,7 +55,7 @@ const Contact = () => {
       headingText='Contact'
       buttonText='Get in Touch'
       buttonLink='#form'
-      backgroundURL='url("/images/ContactImage.png")'
+      backgroundURL='url("/images/ContactImage.jpg")'
     >
       <Section id='form'>
         <MessageForm onSubmit={handleSubmit(sendMessage)}>

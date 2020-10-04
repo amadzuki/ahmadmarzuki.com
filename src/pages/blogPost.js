@@ -32,7 +32,7 @@ const BlogPost = () => {
   const { title, content, date } = posts.find((post) => post.slug === postTitle)
 
   return (
-    <Layout headingText={title} backgroundURL='url("/images/BlogImage.png")'>
+    <Layout headingText={title} backgroundURL='url("/images/BlogImage.jpg")'>
       <Section>
         <Date>
           <time datetime={date}>{dayjs(date).format('MMMM D, YYYY')}</time>
