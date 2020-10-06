@@ -13,6 +13,19 @@ const Section = styled.box`
   align-items: start;
   padding: 2em;
 `
+const ProfileBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+`
+const ProfilePicture = styled.img`
+  height: 5em;
+  width: 5em;
+  border-radius: 50%;
+  border: 10px solid orange;
+`
 const Line = styled.box`
   font-size: 1.5em;
   margin: 1em;
@@ -30,6 +43,10 @@ const About = () => {
       backgroundURL='url("/images/AboutImage.jpg")'
     >
       <Section id='myStory'>
+        <ProfileBox>
+          <ProfilePicture src='/images/marzuki.jpg' />
+          <Line fontSize='2em'>Ahmad Marzuki</Line>
+        </ProfileBox>
         <Line>
           Born in <AccentWord>Papua</AccentWord>, yet a pure blooded{' '}
           <AccentWord>Minangnese</AccentWord>.
@@ -52,6 +69,22 @@ const About = () => {
           One day, I've come to love this rapid changing industry of{' '}
           <AccentWord>Web Development</AccentWord>.
         </Line>
+        <Line>
+          I've learned so much about it under the tutelage of{' '}
+          <Link
+            to={{ pathname: 'https://mhaidarhanif.com' }}
+            target='_blank'
+            style={{
+              textDecoration: 'none',
+              color: 'white',
+              fontWeight: '600',
+            }}
+          >
+            a seasoned veteran.
+          </Link>{' '}
+          And more importantly, <AccentWord>I enjoyed it!</AccentWord>
+        </Line>
+
         <Line>Still, some things never change...</Line>
         <Line alignSelf={'flex-end'} fontStyle={'italic'}>
           Read more in my blog{' '}

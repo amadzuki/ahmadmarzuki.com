@@ -117,8 +117,7 @@ const Home = () => {
                 working as Intern Engineer in PT Timah and CSR at Elcorps and
                 other side jobs. But still, it didn't click for me. And now I've
                 found my passion in coding. Feel free to wander around this
-                personal website. I've built it myself with React framework. I
-                learned this all in 2 months from a great programmer.
+                personal website. I've built it myself with React framework.
               </SectionDescription>
             </SectionHeader>
             <SectionHeader>
