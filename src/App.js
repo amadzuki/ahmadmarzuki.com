@@ -7,10 +7,13 @@ import Contact from './pages/contact'
 import Blog from './pages/blog'
 import BlogPost from './pages/blogPost'
 
+import ScrollToTop from './utils/scrollToTop'
+
 const App = () => {
   return (
     <Router>
       <div>
+        <ScrollToTop />
         <Switch>
           <Route path='/' exact>
             <Home />
