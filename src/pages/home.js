@@ -14,6 +14,8 @@ const Section = styled.box`
   justify-content: center;
   align-items: center;
   padding: 3rem;
+  background-repeat: no-repeat;
+  background-size: cover;
 `
 const SectionContent = styled.box`
   display: flex;
@@ -88,13 +90,6 @@ const CompanyPosition = styled.div``
 const CardImage = styled.img`
   margin: 1em 2em;
 `
-const SeparatorLine = styled.div`
-  width: 70vw;
-  height: 6;
-  border-radius: 4;
-  background-color: secondaryOrange;
-  margin-bottom: 3em;
-`
 
 const Home = () => {
   return (
@@ -108,44 +103,45 @@ const Home = () => {
         <Section>
           <SectionContent flexDirection={'column'}>
             <SectionHeader>
-              <AccentLine></AccentLine>
+              <AccentLine />
               <SectionTitle>
-                I'm a Material Engineer turned Web Developer
+                I am a Material Engineer turned Web Developer
               </SectionTitle>
               <SectionDescription>
                 I was graduated as Bachelor of Engineering. Had a taste of
                 working as Intern Engineer in PT Timah and CSR at Elcorps and
-                other side jobs. But still, it didn't click for me. And now I've
-                found my passion in coding. Feel free to wander around this
-                personal website. I've built it myself with React framework.
+                other side jobs. But still, it didn&lsquo;t click for me. And
+                now I&lsquo;ve found my passion in coding. Feel free to wander
+                around this personal website. I&lsquo;ve built it myself with
+                React framework.
               </SectionDescription>
             </SectionHeader>
             <SectionHeader>
-              <AccentLine></AccentLine>
+              <AccentLine />
               <SectionTitle>My background and experiences</SectionTitle>
             </SectionHeader>
             <SectionExperience>
               <CompanyList>
-                <CompanyLogo src='/images/itb.png'></CompanyLogo>
+                <CompanyLogo src='/images/itb.png' />
                 <CompanyPosition>ITB Alumnus</CompanyPosition>
               </CompanyList>
               <CompanyList>
-                <CompanyLogo src='/images/elzatta.png'></CompanyLogo>
+                <CompanyLogo src='/images/elzatta.png' />
                 <CompanyPosition>CSR Elcorps</CompanyPosition>
               </CompanyList>
               <CompanyList>
-                <CompanyLogo src='/images/timah.png'></CompanyLogo>
+                <CompanyLogo src='/images/timah.png' />
                 <CompanyPosition>Intern PT Timah</CompanyPosition>
               </CompanyList>
               <CompanyList>
-                <CompanyLogo src='/images/icon-amadzuki-new.svg'></CompanyLogo>
+                <CompanyLogo src='/images/icon-amadzuki-new.svg' />
                 <CompanyPosition>Freelance Web Developer</CompanyPosition>
               </CompanyList>
             </SectionExperience>
           </SectionContent>
         </Section>
         <Section
-          backgroundImage={`url("/images/technical_skill_background.jpg")`}
+          backgroundImage={'url("/images/technical_skill_background.jpg")'}
           flexDirection={'column'}
         >
           <SectionHeading mb={'1.5em'}>Technical Skills</SectionHeading>
@@ -171,14 +167,10 @@ const Home = () => {
                   linkURL={app.linkURL}
                   linkText={app.linkText}
                   description={app.description}
-                ></CardPortfolio>
+                />
               )
             })}
           </SectionContent>
-        </Section>
-        <Section height={110} flexDirection={'column'}>
-          <SeparatorLine></SeparatorLine>
-          <div>Copyright © 2020 Ahmad Marzuki</div>
         </Section>
       </>
     </Layout>
