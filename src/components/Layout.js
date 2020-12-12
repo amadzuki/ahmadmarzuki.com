@@ -3,10 +3,12 @@ import PropTypes from 'prop-types'
 import styled, { css, down } from '@xstyled/styled-components'
 
 import Navigation from '../components/Navigation'
+import Footer from '../components/Footer'
 
 const Hero = styled.box`
   height: 100vh;
   background: no-repeat center/cover;
+  background-color: black;
 `
 const HeroHeader = styled.header`
   height: 100%;
@@ -45,8 +47,8 @@ const Layout = ({
 }) => {
   return (
     <div>
+      <Navigation />
       <Hero backgroundImage={backgroundURL}>
-        <Navigation></Navigation>
         <HeroHeader>
           <HeroHeading>{headingText}</HeroHeading>
           {buttonText && (
@@ -55,6 +57,7 @@ const Layout = ({
         </HeroHeader>
       </Hero>
       {children}
+      <Footer />
     </div>
   )
 }
@@ -62,6 +65,9 @@ const Layout = ({
 Layout.propTypes = {
   children: PropTypes.element.isRequired,
   headingText: PropTypes.string.isRequired,
+  buttonText: PropTypes.string.isRequired,
+  buttonLink: PropTypes.string.isRequired,
+  backgroundURL: PropTypes.string.isRequired,
 }
 
 Layout.defaultProps = {
