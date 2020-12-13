@@ -81,7 +81,7 @@ const Contact = () => {
             rows='10'
             placeholder='Your message here'
             ref={register}
-          ></textarea>
+          />
           <button type='submit'>SEND</button>
         </MessageForm>
       </Section>

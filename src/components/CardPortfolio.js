@@ -1,5 +1,5 @@
-import React from "react"
-import styled, { css, down } from "@xstyled/styled-components"
+import React from 'react'
+import styled, { css, down } from '@xstyled/styled-components'
 
 const CardPortfolioStyled = styled.div`
   background-color: secondaryBackground;
@@ -12,7 +12,7 @@ const CardPortfolioStyled = styled.div`
   margin: 1.5rem;
 
   ${down(
-    "sm",
+    'sm',
     css`
       max-width: 300;
     `
@@ -42,7 +42,7 @@ const PortfolioLink = styled.a`
   font-family: monospace;
   color: secondaryOrange;
   ${down(
-    "sm",
+    'sm',
     css`
       font-size: 1.2em;
     `
@@ -66,7 +66,7 @@ const CardPortfolio = ({
       </PortfolioImageFrame>
       <PortfolioTextsDiv>
         <PortfolioTitle>{title}</PortfolioTitle>
-        <PortfolioLink href={linkURL} target={"_blank"}>
+        <PortfolioLink href={linkURL} target={'_blank'}>
           {linkText}
         </PortfolioLink>
         <PortfolioDescription>{description}</PortfolioDescription>

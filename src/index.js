@@ -1,21 +1,21 @@
-import React from "react"
-import ReactDOM from "react-dom"
-import "./index.css"
-import App from "./App"
-import * as serviceWorker from "./serviceWorker"
+import React from 'react'
+import ReactDOM from 'react-dom'
+import './index.css'
+import App from './App'
+import * as serviceWorker from './serviceWorker'
 
-import { ThemeProvider } from "@xstyled/styled-components"
+import { ThemeProvider } from '@xstyled/styled-components'
 
 const theme = {
   colors: {
-    primaryFont: "#fff",
-    secondaryFont: "###ffbc85",
-    primaryOrange: "orange",
-    secondaryOrange: "#d15e00",
-    darkOrange: "#4d2200",
-    primaryBackground: "#222222",
-    secondaryBackground: "#333333",
-    tertiaryBackground: "#4F4F4F",
+    primaryFont: '#fff',
+    secondaryFont: '###ffbc85',
+    primaryOrange: 'orange',
+    secondaryOrange: '#d15e00',
+    darkOrange: '#4d2200',
+    primaryBackground: '#222222',
+    secondaryBackground: '#333333',
+    tertiaryBackground: '#4F4F4F',
   },
 }
 
@@ -25,7 +25,7 @@ ReactDOM.render(
       <App />
     </ThemeProvider>
   </React.StrictMode>,
-  document.getElementById("root")
+  document.getElementById('root')
 )
 
 // If you want your app to work offline and load faster, you can change

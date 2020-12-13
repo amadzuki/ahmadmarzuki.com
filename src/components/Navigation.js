@@ -100,9 +100,9 @@ const Navigation = () => {
           setDropDownIsShown(!dropDownIsShown)
         }}
       >
-        <BurgerLine></BurgerLine>
-        <BurgerLine></BurgerLine>
-        <BurgerLine></BurgerLine>
+        <BurgerLine />
+        <BurgerLine />
+        <BurgerLine />
       </BurgerBox>
     </NavigationWrapper>
   )

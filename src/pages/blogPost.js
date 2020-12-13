@@ -35,7 +35,7 @@ const BlogPost = () => {
     <Layout headingText={title} backgroundURL='url("/images/BlogImage.jpg")'>
       <Section>
         <Date>
-          <time datetime={date}>{dayjs(date).format('MMMM D, YYYY')}</time>
+          <time dateTime={date}>{dayjs(date).format('MMMM D, YYYY')}</time>
         </Date>
         <BlogContent>{ReactHtmlParser(content)}</BlogContent>
       </Section>
