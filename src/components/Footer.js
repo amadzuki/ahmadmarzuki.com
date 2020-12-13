@@ -2,6 +2,8 @@ import React from 'react'
 import styled, { css, down } from '@xstyled/styled-components'
 import { Link } from 'react-router-dom'
 
+import RandomQuotes from './RandomQuotes'
+
 const FooterStyled = styled.div`
   display: flex;
   flex-direction: column;
@@ -29,7 +31,7 @@ const Logo = styled.img`
 `
 const SeparatorLine = styled.div`
   width: 70vw;
-  height: 6;
+  height: 3px;
   border-radius: 4;
   background-color: secondaryOrange;
   margin-bottom: 8px;
@@ -49,6 +51,7 @@ const TextBox = styled.div`
 const Footer = () => {
   return (
     <FooterStyled>
+      <RandomQuotes />
       <Title>links</Title>
       <SocialMediaBox>
         <SocialLink
