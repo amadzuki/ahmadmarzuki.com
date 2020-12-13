@@ -55,7 +55,7 @@ const About = () => {
           Live and grew up in <AccentWord>Jakarta</AccentWord>.
         </Line>
         <Line>
-          In the past, I've dreamed of becoming a{' '}
+          In the past, I&apos;ve dreamed of becoming a{' '}
           <AccentWord>Scientist</AccentWord>, <AccentWord>Engineer</AccentWord>,{' '}
           <AccentWord>Entrepreneur</AccentWord>...
         </Line>
@@ -63,14 +63,15 @@ const About = () => {
           Or a tech prophet like <AccentWord>Elon Musk</AccentWord>.
         </Line>
         <Line>
-          Having tried various things, it turns out they didn't click for me
+          Having tried various things, it turns out they didn&apos;t click for
+          me
         </Line>
         <Line>
-          One day, I've come to love this rapid changing industry of{' '}
+          One day, I&apos;ve come to love this rapid changing industry of{' '}
           <AccentWord>Web Development</AccentWord>.
         </Line>
         <Line>
-          I've learned so much about it under the tutelage of{' '}
+          I&apos;ve learned so much about it under the tutelage of{' '}
           <Link
             to={{ pathname: 'https://mhaidarhanif.com' }}
             target='_blank'

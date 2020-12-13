@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled, { css, down } from '@xstyled/styled-components'
 
 const CardPortfolioStyled = styled.div`
@@ -73,6 +74,14 @@ const CardPortfolio = ({
       </PortfolioTextsDiv>
     </CardPortfolioStyled>
   )
+}
+
+CardPortfolio.propTypes = {
+  imagePath: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  linkURL: PropTypes.string.isRequired,
+  linkText: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
 }
 
 export default CardPortfolio
