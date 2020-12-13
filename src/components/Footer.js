@@ -13,6 +13,7 @@ const FooterStyled = styled.div`
 const Title = styled.h1`
   font-size: 1.5em;
   color: secondaryOrange;
+  margin-top: 1.5em;
   margin-bottom: 0;
 `
 const Text = styled.p`
@@ -52,7 +53,7 @@ const Footer = () => {
   return (
     <FooterStyled>
       <RandomQuotes />
-      <Title>links</Title>
+      <Title>My links</Title>
       <SocialMediaBox>
         <SocialLink
           to={{ pathname: 'https://www.facebook.com/amadzuki7/' }}

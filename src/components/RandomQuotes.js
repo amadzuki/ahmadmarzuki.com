@@ -5,7 +5,7 @@ import randomQuotes from 'random-quotes'
 const RandomQuotesStyled = styled.div`
   display: flex;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   background-color: #575757;
 `
 const Quote = styled.p`
@@ -24,7 +24,7 @@ const RandomQuotes = () => {
 
   return (
     <RandomQuotesStyled>
-      <Quote>&apos;{body}&apos;</Quote>
+      <Quote>&quot;{body}&quot;</Quote>
       <Author>{author}</Author>
     </RandomQuotesStyled>
   )
