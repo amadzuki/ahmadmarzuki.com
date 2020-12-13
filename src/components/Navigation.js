@@ -91,7 +91,11 @@ const Navigation = () => {
         <Link activeClassName='selected' to='/contact'>
           CONTACT
         </Link>
-        <Link activeClassName='selected' to='/blog'>
+        <Link
+          activeClassName='selected'
+          to={{ pathname: 'https://blog.ahmadmarzuki.com' }}
+          target='_blank'
+        >
           BLOG
         </Link>
       </LinkBox>

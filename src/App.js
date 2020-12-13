@@ -4,8 +4,6 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Home from './pages/home'
 import About from './pages/about'
 import Contact from './pages/contact'
-import Blog from './pages/blog'
-import BlogPost from './pages/blogPost'
 
 import ScrollToTop from './utils/scrollToTop'
 
@@ -23,12 +21,6 @@ const App = () => {
           </Route>
           <Route path='/contact'>
             <Contact />
-          </Route>
-          <Route path='/blog' exact>
-            <Blog />
-          </Route>
-          <Route path='/blog/:postTitle'>
-            <BlogPost />
           </Route>
         </Switch>
       </div>
