@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from '@xstyled/styled-components'
+import styled, { css, down } from '@xstyled/styled-components'
 import { Link } from 'react-router-dom'
 
 const FooterStyled = styled.div`
@@ -9,43 +9,56 @@ const FooterStyled = styled.div`
   background-color: #333333;
 `
 const Title = styled.h1`
-  font-size: 2em;
+  font-size: 1.5em;
   color: secondaryOrange;
+  margin-bottom: 0;
 `
 const Text = styled.p`
   font-family: monospace;
-  color: secondaryOrange;
+  color: #a6a6a6;
 `
 const SocialMediaBox = styled.div`
   display: flex;
 `
 const SocialLink = styled(Link)`
   display: block;
-  margin: 20px 40px;
+  margin: 16px 40px;
 `
 const Logo = styled.img`
-  width: 40px;
+  width: 30px;
 `
 const SeparatorLine = styled.div`
   width: 70vw;
   height: 6;
   border-radius: 4;
   background-color: secondaryOrange;
-  margin-bottom: 1em;
+  margin-bottom: 8px;
+`
+const TextBox = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 70vw;
+  ${down(
+    'sm',
+    css`
+      flex-direction: column;
+      justify-content: center;
+    `
+  )}
 `
 const Footer = () => {
   return (
     <FooterStyled>
-      <Title>connect with me</Title>
+      <Title>links</Title>
       <SocialMediaBox>
         <SocialLink
-          to={{ pathname: 'https://github.com/amadzuki/saikou-client' }}
+          to={{ pathname: 'https://www.facebook.com/amadzuki7/' }}
           target='_blank'
         >
           <Logo src='images/icon-facebook.svg' />
         </SocialLink>
         <SocialLink
-          to={{ pathname: 'https://github.com/amadzuki/saikou-client' }}
+          to={{ pathname: 'https://www.instagram.com/amadzuki/' }}
           target='_blank'
         >
           <Logo src='images/icon-instagram.svg' />
@@ -56,21 +69,21 @@ const Footer = () => {
         >
           <Logo src='images/icon-github.svg' />
         </SocialLink>
-        <SocialLink
-          to={{ pathname: 'https://github.com/amadzuki/saikou-client' }}
-          target='_blank'
-        >
+        <SocialLink to={{ pathname: 'https://t.me/amadzuki' }} target='_blank'>
           <Logo src='images/icon-telegram.svg' />
         </SocialLink>
         <SocialLink
-          to={{ pathname: 'https://github.com/amadzuki/saikou-client' }}
+          to={{ pathname: 'https://wa.me/message/55S2UDEGSXMQC1' }}
           target='_blank'
         >
           <Logo src='images/icon-whatsapp.svg' />
         </SocialLink>
       </SocialMediaBox>
       <SeparatorLine />
-      <Text>Copyright ©2020 Ahmad Marzuki</Text>
+      <TextBox>
+        <Text>Copyright ©2020 Ahmad Marzuki</Text>
+        <Text>Made with ♥ and ☕</Text> {/*eslint-disable-line*/}
+      </TextBox>
     </FooterStyled>
   )
 }
