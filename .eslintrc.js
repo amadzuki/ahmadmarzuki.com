@@ -3,6 +3,7 @@ module.exports = {
     browser: true,
     es6: true,
     node: true,
+    'jest/globals': true,
   },
   extends: ['eslint:recommended', 'plugin:react/recommended'],
   globals: {
@@ -16,7 +17,7 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  plugins: ['react'],
+  plugins: ['react', 'jest'],
   rules: {
     semi: ['error', 'never'],
     quotes: ['error', 'single'],
@@ -26,5 +27,10 @@ module.exports = {
     'react/destructuring-assignment': 'error',
     'react/no-unescaped-entities': 'error',
     'react/react-in-jsx-scope': 0,
+  },
+  settings: {
+    react: {
+      version: 'detect',
+    },
   },
 }
