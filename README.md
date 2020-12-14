@@ -8,7 +8,7 @@ My personal website. Simply a showcase of my portfolios created using React fram
 
 ![React](https://logo.clearbit.com/reactjs.org) ![React Router DOM](https://logo.clearbit.com/reactrouter.com)
 ![xstyled](https://logo.clearbit.com/xstyled.dev) ![ESLint](https://logo.clearbit.com/eslint.org)
-![Airtable](https://logo.clearbit.com/airtable.com) ![DayJS](https://day.js.org/img/logo.png =120x)
+![Airtable](https://logo.clearbit.com/airtable.com) ![DayJS](https://day.js.org/img/logo.png)
 ![React Hook Form](https://logo.clearbit.com/react-hook-form.com)
 
 - React
