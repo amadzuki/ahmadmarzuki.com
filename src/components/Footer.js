@@ -22,10 +22,18 @@ const Text = styled.p`
 `
 const SocialMediaBox = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 `
 const SocialLink = styled(Link)`
   display: block;
   margin: 16px 40px;
+  ${down(
+    'sm',
+    css`
+      margin: 10px 20px;
+    `
+  )}
 `
 const Logo = styled.img`
   width: 30px;
