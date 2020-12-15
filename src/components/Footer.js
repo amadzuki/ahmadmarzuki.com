@@ -68,7 +68,7 @@ const Footer = () => {
           <Logo src='images/icon-instagram.svg' />
         </SocialLink>
         <SocialLink
-          to={{ pathname: 'https://github.com/amadzuki/saikou-client' }}
+          to={{ pathname: 'https://github.com/amadzuki' }}
           target='_blank'
         >
           <Logo src='images/icon-github.svg' />
