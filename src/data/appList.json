@@ -23,7 +23,7 @@
   {
     "title": "Janken Battle",
     "imagePath": "/images/screenshot-janken_battle.png",
-    "linkURL": "https://amadzuki-janken.netlify.app/",
+    "linkURL": "https://jankenbattle.ahmadmarzuki.com/",
     "linkText": "jankenbattle.ahmadmarzuki.com",
     "description": "Rock-Paper-Scissor game on web. Single player versus computer. Built on React framework."
   }
