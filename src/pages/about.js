@@ -90,7 +90,8 @@ const About = () => {
         <Line alignSelf={'flex-end'} fontStyle={'italic'}>
           Read more in my blog{' '}
           <Link
-            to='/blog'
+            to={{ pathname: 'https://blog.ahmadmarzuki.com' }}
+            target='_blank'
             style={{
               textDecoration: 'none',
               color: 'orange',
