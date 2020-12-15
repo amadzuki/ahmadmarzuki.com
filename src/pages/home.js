@@ -71,8 +71,15 @@ const SectionExperience = styled.box`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 100%;
 `
-
+const ResumeLink = styled.a`
+  background-color: orange;
+  padding: 0.5em 1em;
+  border-radius: 1em;
+  text-decoration: none;
+  color: black;
+`
 const CompanyList = styled.div`
   display: flex;
   justify-content: center;
@@ -105,15 +112,13 @@ const Home = () => {
             <SectionHeader>
               <AccentLine />
               <SectionTitle>
-                I am a Material Engineer turned Web Developer
+                Web Developer engineered for adaptability.
               </SectionTitle>
               <SectionDescription>
-                I was graduated as Bachelor of Engineering. Had a taste of
-                working as Intern Engineer in PT Timah and CSR at Elcorps and
-                other side jobs. But still, it didn&lsquo;t click for me. And
-                now I&lsquo;ve found my passion in coding. Feel free to wander
-                around this personal website. I&lsquo;ve built it myself with
-                React framework.
+                Inquisitive and fast learner. Now that I&lsquo;ve found my
+                passion in coding, I&lsquo;ll use every chance to learn more and
+                grow myself in this field. Feel free to wander around to know
+                more about me. I&lsquo;ve built it myself with React framework.
               </SectionDescription>
             </SectionHeader>
             <SectionHeader>
@@ -135,9 +140,17 @@ const Home = () => {
               </CompanyList>
               <CompanyList>
                 <CompanyLogo src='/images/icon-amadzuki-new.svg' />
-                <CompanyPosition>Freelance Web Developer</CompanyPosition>
+                <CompanyPosition>Freelance WebDev</CompanyPosition>
               </CompanyList>
             </SectionExperience>
+            <Section width='100%'>
+              <ResumeLink
+                href='https://ahmadmarzuki.com/resume.pdf'
+                target='_blank'
+              >
+                Download my Resume
+              </ResumeLink>
+            </Section>
           </SectionContent>
         </Section>
         <Section
