@@ -28,7 +28,7 @@ const PortfolioImageFrame = styled.div`
   justify-content: center;
 `
 const PortfolioImage = styled.img`
-  width: 400px;
+  width: 100%;
   max-height: 200px;
   object-fit: cover;
 `

@@ -70,8 +70,13 @@ const SectionDescription = styled.box`
 const SectionExperience = styled.box`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
+`
+const ResumeBox = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
 `
 const ResumeLink = styled.a`
   background-color: orange;
@@ -143,14 +148,14 @@ const Home = () => {
                 <CompanyPosition>Freelance WebDev</CompanyPosition>
               </CompanyList>
             </SectionExperience>
-            <Section width='100%'>
+            <ResumeBox>
               <ResumeLink
                 href='https://ahmadmarzuki.com/resume.pdf'
                 target='_blank'
               >
                 Download my Resume
               </ResumeLink>
-            </Section>
+            </ResumeBox>
           </SectionContent>
         </Section>
         <Section
