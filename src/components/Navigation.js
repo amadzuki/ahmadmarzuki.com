@@ -80,7 +80,9 @@ const Navigation = () => {
       display={display}
       className={dropDownIsShown ? 'dropDown' : null}
     >
-      <IconImg src='/images/icon-amadzuki-new.svg' />
+      <NavLink to='/'>
+        <IconImg src='/images/icon-amadzuki-new.svg' />
+      </NavLink>
       <LinkBox className={dropDownIsShown ? 'dropDown' : null}>
         <Link activeClassName='selected' exact to='/'>
           HOME
